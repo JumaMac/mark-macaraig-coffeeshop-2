@@ -1,0 +1,70 @@
+body {
+  font-family: 'Open-sans', sans-serif, monospace;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none ;
+}
+
+.background--primary {
+  background-color: #FFF0ED;
+}
+
+.background--secondary {
+  background-color: #F7F7F7;
+}
+
+.bean-logo {
+  display: inline;
+  width: 4%;
+  margin-left: 1rem;
+  padding-top: 2rem;
+} 
+
+.nav__header {
+  display: inline;
+  text-decoration: none;
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #393939; 
+}
+
+.nav-menu {
+  position: relative;
+  bottom: 4rem; right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  list-style-type: none;
+  font-size: 1.313rem;
+}
+
+.nav__list {
+  display: inline-block;
+}
+
+.nav__anchor-item {
+text-decoration: none;
+font-size: 1.313rem;
+font-weight: 400;
+color: #393939;
+margin: 20px;
+}
+
+.active,.product-price {
+  color: #5BACC3;
+}
+
+.nav__header--margin {
+  margin: 60px 0;
+  display: inline;
+}
+
+
+
+
+
+

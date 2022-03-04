@@ -1,0 +1,283 @@
+@use './partials/global' as *;
+
+.font--bold {
+  font-weight: 700;
+}
+
+.button--primary {
+  font-size: 1.313rem;
+  background-color: #5BACC3;
+  color: #FFF;
+  min-width: 65%;
+  max-width: 80%;
+  padding: 1.25rem 2rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.button--primary::before {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem; right: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #393939;
+}
+
+.button--primary:active::before {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #393939;
+}
+
+.button__align--center {
+  text-align: center;
+  margin: 60px 0;
+  padding-bottom: 60px;
+}
+
+.discount-text {
+  font-size: 2.813rem;
+  color: #FFF;
+  background-color: #393939;
+  text-align: center;
+  min-width: 60%;
+  max-width: 90%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% {background-color: black;}
+  25% {background-color: #5BACC3}
+  50% {background-color: black;}
+  75% {background-color: #5BACC3}
+  100% {background-color: black;}
+
+}
+
+.div__paragraph {
+  width: 75%;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.footer--align {
+  display: inline-block;
+  font-size: 1.13rem;
+  margin: 60px 80px 60px 160px;
+}
+
+.footer--title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.footer--margin {
+  margin-left: 80px;
+  margin-right: 0;
+}
+
+.main__image {
+  position: absolute;
+  min-height: 62%;
+  max-height: 80%;
+  margin-left: 65%;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.main__header{
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main__section--align {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15rem;
+}
+
+.card__content--flex {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-top: 3rem;
+}
+
+.card__header { 
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.card__paragraph {
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 2rem;
+  margin: 0;
+  padding-bottom: 2.5rem;
+  color: #909090;
+}
+
+.product-price {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  left: 75%;
+}
+
+.section__card {
+  background-color: #FFF;
+  min-width: 25%;
+  max-width: 25%;
+  min-height: 30%;
+  max-height: 30%; 
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
+  padding-top: 2.5rem;
+  overflow: hidden;
+}
+
+.section__card--align {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section__img--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__img--size {
+  height: 28rem;
+  min-width: 40%;
+  padding-bottom: 2rem; 
+}
+
+.section--discount {
+  text-align: center;
+  padding-left: 140px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+
+
+
+.section__div--align {
+  width: 30%;
+  margin-left: 10rem;
+  margin-top: 15rem;
+}
+
+.social-media-icons,.div__icons {
+  min-width: 3rem;
+  max-width: 3.5rem;
+}
+
+.div__icons--flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 3rem;
+  width: 55%;
+}
+
+.section--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__div--size {
+  width: 50%;
+  padding-left: -3rem;
+  padding-right: -3rem;
+}
+
+.section__div--img {
+  min-height: 240px;
+  max-height: 550px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section__img--background {
+  background-image: url(../assets/coldbrewbackground.png);
+  background-size: cover;
+  min-width: 400px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.section__div--img:hover {
+  animation: rotate 2s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section__img--background:before {
+  content: "";
+  position: absolute;
+  right: 0.5rem; bottom: 0.5rem;
+  border: 5px solid #5BACC3;
+  width: 100%;
+  height: 100%;
+}
+
+.section__div--paragraph {
+  width: 60%;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.footer--logo {
+  width: 6%;
+  opacity: 0.25;
+}
+
+.footer__img--position1 {
+  position: relative;
+  bottom: 4rem; right: 5rem;
+}
+
+.footer__img--position2 {
+  position: relative;
+  left: 5rem; top: 2rem;
+}
